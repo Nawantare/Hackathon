@@ -61,7 +61,8 @@ else:
             close_date=datetime.now()                      #datetime.now records last time door was closed
             print("Door last closed at ",close_date)
             print("The door is now locked")
-            count = 0                                      #reset the count to zero since door is now closed
+            count = 0
+            door()                                      #reset the count to zero since door is now closed
         elif count == 0 and command == "Close":
             print("The door is already locked!")           #since count variable is more than  zero, it means the door was already closed
         else:
